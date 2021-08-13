@@ -1,7 +1,35 @@
-*{
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap");
+
+* {
     margin: 0;
     padding: 0;
+    font-family: "Montserrat", sans-serif;
 }
-.test{
-    color: red;
+
+.test {
+    color: green;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+.task-section{
+    background-color: rgba(0, 128, 0, 0.192);
+}
+
+/* #input-box{
+    border: 1px solid green !important;
+    outline: none !important;
+} */
+.incomplete-task,
+.complete-task{
+    background-color: white;
+}
+.dlt-btn{
+    background-color: rgb(200, 15, 15);
+    color:  white;
 }
