@@ -1,7 +1,7 @@
 const taskField = document.getElementById('input-box');
 const addTaskBtn = document.getElementById('task-add-btn');
 const incompleteItem = document.getElementById('incomplete-items');
-const completeItem = document.getElementById('complete-task');
+const completeItem = document.getElementById('complete-items');
 const removeTask = document.getElementById('delete');
 
 console.log('%c This is To-Do App, developed by its.Rakib!!', 'font-weight: bold; font-size: 20px;color: red')
