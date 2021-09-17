@@ -6,9 +6,6 @@
     font-family: "Montserrat", sans-serif;
 }
 
-.test {
-    color: green;
-}
 
 li {
     list-style: none;
@@ -18,7 +15,7 @@ a {
     text-decoration: none;
 }
 .task-section{
-    background-color: rgba(0, 128, 0, 0.192);
+    background-color: rgba(0, 93, 146, 0.452);
 }
 
 /* #input-box{
@@ -32,4 +29,5 @@ a {
 .dlt-btn{
     background-color: rgb(200, 15, 15);
     color:  white;
+    font-weight: 500;
 }

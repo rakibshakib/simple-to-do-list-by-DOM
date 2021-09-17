@@ -11,61 +11,71 @@
     <title>To-Do list</title>
 </head>
 
-<body>
+<body class="border-5">
     <header>
         <section class="container mx-auto py-5">
             <div>
                 <h2 id="test" class="test text-center text-4xl font-bold">
-                    To Do App
+                    To-Do App
                 </h2>
+                <p class="text-center text-sm py-3">Add Your Daily Task</p>
             </div>
         </section>
     </header>
     <main>
         <section class="container mx-auto py-5">
-            <form action="" id='new-task-container'
-                class="flex justify-center text-xl items-center gap-4 border-4 rounded-lg py-3">
+            <div id='new-task-container'
+                class="flex justify-center  flex-col md:flex-row text-xl items-center gap-4 border-4 rounded-lg py-3">
                 <label for="" class="font-bold">Add New Task</label>
-                <input type="text" placeholder="Add new task" id="input-box" class="border-2 py-2 px-5 rounded-lg" />
-                <input type="submit" id="task-add-btn" class="border-2 py-1 bg-green-100 px-5 rounded-lg font-semibold"
-                    value="Add Task">
-            </form>
+                    <input type="text" placeholder="Add new task" id="input-box"
+                        class="border-2 py-2 px-5 rounded-lg" />
+                    <input onclick="addTask()" type="submit" id="task-add-btn"
+                        class="border-2 py-1 bg-blue-100 px-5 rounded-lg font-semibold" value="Add Task">
+            </div>
         </section>
         <!-- task section -->
         <section class="container mx-auto my-3">
             <!-- grid section -->
             <div id="task-area"
-                class="grid grid-cols-1 md:grid-cols-2 gap-4 justify-items-center border-4 rounded-lg py-5  task-section">
+                class="grid grid-cols-1 md:grid-cols-2 gap-4 justify-items-center rounded-lg py-5 task-section">
 
                 <div id="incomplete-area" class="rounded-lg py-5 px-10 incomplete-task">
 
                     <h2 class="text-xl font-bold py-2 mb-4 border-b-2">Incomplete Task List</h2>
 
                     <div class="text-lg font-semibold" id='incomplete-items'>
-                        <li class="py-4"><input type="checkbox" name="" id="" /><label for=""> Task One</label></li>
-                        <li class="py-4"><input type="checkbox" name="" id="" /> <label for=""> Task One</label></li>
-                        <li class="py-4"><input type="checkbox" name="" id="" /> <label for=""> Task One</label></li>
+                        <!-- <li class="py-2">
+                            <input type="checkbox" />
+                            <label for="" class="ml-2"> Task One</label>
+                        </li> -->
+
                     </div>
                 </div>
+
                 <div id="complete-area" class="rounded-lg py-5 px-10 complete-task">
 
                     <h2 class="text-xl font-bold py-2 mb-4 border-b-2">Finished Task List</h2>
 
                     <div class="text-lg font-semibold" id='complete-items'>
-                        <li class="flex justify-between items-center py-4"><label for="">Task One</label>
-                            <button class="border py-1 px-2 dlt-btn rounded-lg">Delete</button></li>
-                        <li class="flex justify-between items-center py-4"><label for="">Task One</label>
-                            <button class="border py-1 px-2 dlt-btn rounded-lg">Delete</button></li>
-                        <li class="flex justify-between items-center py-4"><label for="">Task One</label>
-                            <button class="border py-1 px-2 dlt-btn rounded-lg">Delete</button></li>
+                        <!-- <li id="complete-task" class="py-2">
+                            <label for="">Task One</label>
+                            <button id="delete" class="border py-1 px-2 dlt-btn rounded-lg">Delete</button>
+                        </li> -->
                     </div>
                 </div>
+
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+
+        <h2 class="text-center my-5 font-semibold text-gray-400">all right reserved &copy; <a
+                href="https://www.facebook.com/its.rakib.official/" style="color:rgba(0, 93, 146, 0.452)">its.Rakib</a></h2>
+        <hr>
+    </footer>
     <!-- adding external js file  -->
-    <script src="script/app.js"></script>
+    <!-- <script src="script/app.js"></script> -->
+    <script src="script/to-do.js"></script>
 </body>
 
 </html>
